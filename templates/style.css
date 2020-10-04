@@ -1,0 +1,5 @@
+.container {
+display: grid;
+grid-column: 300px 300px 300px;
+  grid-gap: 50px;
+}

@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static 'style2.css' %}">
+  <title>FLA PROJECT </title>
+</head>
+
+<body>
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="http://127.0.0.1:8000">
+      <img src="{% static 'FLA2.png' %}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> FLA Project
+    </a>
+  </nav>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, There!</h1>
+    <p class="lead">This website is for checking the FLA state of your give input. click on the type of identification you want to do.</p>
+    <hr class="my-4">
+
+    <div class="container">
+
+      <div class="card" style="width: 20rem;">
+        <img src="{% static 'Grammar.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grammar</h5>
+          <p class="card-text">A grammar G can be formally written as a 4-tuple (N, T, S, P) where<br>- N or VN is a set of variables or non-terminal symbols.<br>- T or ∑ is a set of Terminal symbols.<br>- S is a special variable called the Start
+            symbol, S ∈ N<br>- P is Production rules for Terminals and Non-terminals. A production rule has the form α → β, where α and β are strings on VN ∪ ∑ and least one symbol of α belongs to VN.</p>
+            
+          <a href="grammar.html" class="btn btn-primary">Check Expression</a>
+        </div>
+      </div>
+
+      <!--
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'NFA.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NFA</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="Sample.html" class="btn btn-primary">Check Expression</a>
+        </div>
+      </div>
+      -->
+
+      <div class="card" style="width: 20rem;">
+        <img src="{% static 'RE.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Regular Expression</h5>
+          <p class="card-text">The language accepted by finite automata can be easily described by simple expressions called Regular Expressions. It is the most effective way to represent any language.
+            The languages accepted by some regular expression are referred to as Regular languages</p>
+          <a href="home.html" class="btn btn-primary">Check Expression</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer><h4>Project by : Rajni, Shrisha, Jayadurga, Prince and Jaswanth</h4></footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
